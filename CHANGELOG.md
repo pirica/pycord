@@ -22,11 +22,26 @@ These changes are available on the `master` branch, but have not yet been releas
   `tags`. ([#2520](https://github.com/Pycord-Development/pycord/pull/2520))
 - Added `Member.guild_banner` and `Member.display_banner` properties.
   ([#2556](https://github.com/Pycord-Development/pycord/pull/2556))
+- Added optional `filter` parameter to `utils.basic_autocomplete()`.
+  ([#2590](https://github.com/Pycord-Development/pycord/pull/2590))
 
 ### Fixed
 
 - Fixed `Enum` options not setting the correct type when only one choice is available.
   ([#2577](https://github.com/Pycord-Development/pycord/pull/2577))
+- Fixed `codec` option for `FFmpegOpusAudio` class to make it in line with
+  documentation. ([#2581](https://github.com/Pycord-Development/pycord/pull/2581))
+- Fixed a possible bug where audio would play too fast at the beginning of audio files.
+  ([#2584](https://github.com/Pycord-Development/pycord/pull/2584))
+- Fixed paginator not responding when using `Paginator.edit()` with default parameters.
+  ([#2594](https://github.com/Pycord-Development/pycord/pull/2594))
+- Fixed the `is_owner()` `user` type hint: `User` -> `User | Member`.
+  ([#2593](https://github.com/Pycord-Development/pycord/pull/2593))
+- Fixed `Guild.create_test_entitlement()` and `User.create_test_entitlement()` using the
+  guild/user ID instead of the application ID.
+  ([#2595](https://github.com/Pycord-Development/pycord/pull/2595))
+- Fixed commands with `BucketType.cagegory` cooldown causing issues in private channels.
+  ([#2603](https://github.com/Pycord-Development/pycord/pull/2603))
 
 ### Changed
 
